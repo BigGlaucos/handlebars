@@ -99,7 +99,7 @@ app.post('/books/update/:id', (request, response) =>{
 app.post('/books/remove/:id', (request, response) =>{
     const { id } = request.params;
 
-    const sql = `DELETE books WHERE id = ${id}`;
+    const sql = `DELETE FROM books WHERE id = ${id}`;
 
     connection.query(sql, (error, data) => {
         if (error) {
@@ -115,7 +115,7 @@ const connection = mysql2.createPool({
     host: "localhost",
     user: "aluno_medio",
     password: "@lunoSenai23.",
-    database: "systen_base"
+    database: "blibio"
 });
 
 app.listen(3333, () => {

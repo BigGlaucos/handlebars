@@ -115,7 +115,7 @@ const connection = mysql2.createPool({
     host: "localhost",
     user: "aluno_medio",
     password: "@lunoSenai23.",
-    database: "blibio"
+    database: "systen_base"
 });
 
 app.listen(3333, () => {
